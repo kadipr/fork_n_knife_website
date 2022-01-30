@@ -281,6 +281,11 @@ Book.html
     background-color: var(--light-green);
 }
 
+.form > * {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
 .form input, .form textarea {
     border: none;
     padding: 5px;
@@ -292,8 +297,7 @@ Book.html
 }
 
 .form-title {
-    max-width: 780px;
-    margin: 0 auto 30px;
+    margin-bottom: 30px;
 }
 
 .form-grid {
@@ -301,8 +305,6 @@ Book.html
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 380px auto;
     gap: 35px 30px;
-    max-width: 780px;
-    margin: 0 auto;
 }
 
 .personal-data {
