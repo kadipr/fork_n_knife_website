@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <title>Fork N Knife</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <section class="navbar">
+        <div class="container flex space-between center-align">
+            <div class="logo flex">
+                <img src="img/logo.png" alt="">
+            </div> 
+
+            <div class="nav flex">
+                <nav class="flex center-align">
+                    <ul class="flex uppercase">
+                        <li><a href="index.html">strona główna</a></li>
+                        <li><a href="menu.html">menu</a></li>
+                        <li><a href="book.html">rezerwacje</a></li>
+                    </ul>
+                </nav>
+
+                <div class="search flex">
+                    <img src="img/search-icon.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form -->
+    <section class="form">
+        <div class="form-title">
+            <h1>Rezerwacja stolika</h1>
+        </div>
+
+        <form>
+            <div class="form-grid">
+                <div class="personal-data flex">
+                    <label>Imię</label>
+                    <input type="text" id="name">
+
+                    <label for="second-name">Nazwisko</label>
+                    <input type="text" id="second-name">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email">
+
+                    <label for="date">Data</label>
+                    <input type="date" id="date">
+
+                    <label for="time">Godzina</label>
+                    <input type="time" id="time">
+
+                    <label for="number">Ilość osób</label>
+                    <input type="number" id="number">
+                </div>
+
+                <div class="notes">
+                    <textarea name="" id="txt" placeholder="Uwagi"></textarea>
+                </div>
+
+                <input class="btn uppercase" type="submit" value="Rezerwuj">
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="container flex space-between">
+                <div class="footer-info">
+                    <div class="footer-contact">
+                        <p>ul. Internetowa 28</p>
+                        <p>30-001 Kraków</p>
+                        <br>
+                        <p>123 456 789</p>
+                        <p>kontakt@jakiśmail.com</p>
+                    </div>
+
+                    <div class="footer-icons flex">
+                        <div class="footer-icon">
+                            <img src="img/fb-icon.png" alt="">
+                        </div>
+
+                        <div class="footer-icon">
+                            <img src="img/insta-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="">Strona główna</a></li>
+                        <li><a href="">Menu</a></li>
+                        <li><a href="">Rezerwacje</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

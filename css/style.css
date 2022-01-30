@@ -15,6 +15,7 @@
 
 body {
     font-family: var(--font-name);
+    min-height: 100vh;
 }
 
 .container {
@@ -69,6 +70,12 @@ img {
 .text-center {
     text-align: center;
 }
+
+/* 
+------------
+Index.html
+------------
+ */
 
 /* Navbar */
 .navbar {
@@ -222,6 +229,7 @@ img {
 
 /* Footer */
 .footer {
+    height: 230px;
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: var(--dark-green);
@@ -258,4 +266,72 @@ img {
 
 .footer-links a:hover {
     color: var(--navbar-text-color)
+}
+
+/* 
+-------------
+Book.html
+-------------
+*/
+
+.form {
+    height: calc(100vh - 280px);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--light-green);
+}
+
+.form input, .form textarea {
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.form label {
+    font-size: 14px;
+}
+
+.form-title {
+    max-width: 780px;
+    margin: 0 auto 30px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 380px auto;
+    gap: 35px 30px;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.personal-data {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.personal-data input:nth-child(3) {
+    margin-bottom: 20px;
+}
+
+.notes {
+    grid-column: 2 / 3;
+    grid-row: 1/ 2;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+}
+
+input[type="submit"] {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+input.btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
