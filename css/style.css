@@ -65,6 +65,7 @@ img {
     background-color: #fff;
     color: var(--dark-green);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .text-center {
@@ -336,4 +337,46 @@ input[type="submit"] {
 input.btn {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+/* 
+----------
+Menu.html
+----------
+*/
+
+.menu {
+    background-color: var(--light-green);
+    min-height: calc(100vh - 280px);
+    padding-top: 50px;
+}
+
+.menu-categories {
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.menu-categories span {
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.menu-meals {
+    display: none;
+}
+
+.menu-meals.active {
+    display: block;
+}
+
+.menu-meal {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 12px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.7;
+    background-color: white;
+    color: var(--dark-green);
 }
