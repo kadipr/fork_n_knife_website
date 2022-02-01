@@ -117,6 +117,43 @@ Index.html
     cursor: pointer;
 }
 
+@media (max-width: 900px) {
+    .logo {
+        flex-basis: 20%;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        height: auto;
+    }
+
+    .navbar > div {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 250px;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .nav {
+        padding-bottom: 10px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        text-align: center;
+        line-height: 2;
+    }
+
+    .search {
+        display: none;
+    }
+}
+
 /* Header */
 .header-section {
     height: 400px;
@@ -138,8 +175,6 @@ Index.html
     font-size: 25px;
     transition: .2s;
 }
-
-
 
 /* Meals */
 .meals {
@@ -164,6 +199,25 @@ Index.html
     color: var(--dark-green);
 }
 
+@media (max-width: 700px) {
+    .meals > div {
+        flex-wrap: wrap;
+        max-width: 90%;
+    }
+    .meal {
+        flex-basis: 47%;
+    }
+}
+
+@media (max-width: 576px) {
+    .meals > div {
+        justify-content: center;
+    }
+    .meal {
+        flex-basis: 70%;
+    }
+}
+
 /* Info */
 .info {
     padding-top: 50px;
@@ -182,6 +236,22 @@ Index.html
     max-width: 600px;
     padding-left: 50px;
     padding-right: 10px;
+}
+
+@media (max-width: 900px) {
+    .info > div {
+        flex-direction: column;
+    }
+
+    .info-image {
+        width: 100%;
+    }
+
+    .info-description {
+        width: 100%;
+        padding-top: 30px;
+        max-width: 90%;
+    }
 }
 
 .info-description h2 {
@@ -226,6 +296,42 @@ Index.html
     width: 50%;
     max-height: 400px;
     overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .book > div {
+        flex-direction: column-reverse;
+    }
+
+    .center-book-description {
+        width:90%;
+    }
+
+    .book-background {
+        background-color: transparent;
+    }
+
+    .book-description {
+        position: relative;
+        padding-top: 20px;
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .book-description h2 {
+        text-align: center;
+    }
+
+    .book-description a {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+    }
+
+    .book-image {
+        width: 100%;
+    }
 }
 
 /* Footer */
@@ -277,8 +383,7 @@ Book.html
 
 .form {
     height: calc(100vh - 280px);
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 15px;
     background-color: var(--light-green);
 }
 
@@ -359,6 +464,17 @@ Menu.html
 .menu-categories span {
     flex-basis: 20%;
     text-align: center;
+}
+
+@media (max-width: 576px) {
+    .menu-categories {
+        flex-wrap: wrap;
+    }
+
+    .menu-categories span {
+        flex-basis: 45%;
+        margin-bottom: 10px;
+    }
 }
 
 .menu-meals {
